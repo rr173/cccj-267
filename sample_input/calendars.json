@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "calendars": [
+    {
+      "calendar_id": "EAST-UTC",
+      "service_point": "EAST",
+      "version": 1,
+      "visible_from_submit_no": 1,
+      "coverage": [
+        {
+          "id": "COV-YEAR",
+          "start": "2025-12-31T23:00Z",
+          "end": "2026-01-01T01:00Z"
+        },
+        {
+          "id": "COV-JAN5",
+          "start": "2026-01-05T00:00Z",
+          "end": "2026-01-06T00:00Z"
+        }
+      ],
+      "open_intervals": [
+        {
+          "id": "OPEN-YEAR",
+          "start": "2025-12-31T23:00Z",
+          "end": "2026-01-01T01:00Z"
+        },
+        {
+          "id": "OPEN-JAN5-AM",
+          "start": "2026-01-05T09:00Z",
+          "end": "2026-01-05T12:00Z"
+        },
+        {
+          "id": "OPEN-JAN5-PM",
+          "start": "2026-01-05T13:00Z",
+          "end": "2026-01-05T17:00Z"
+        }
+      ]
+    },
+    {
+      "calendar_id": "WEST-UTC",
+      "service_point": "WEST",
+      "version": 1,
+      "visible_from_submit_no": 1,
+      "note": "Original signed calendar erroneously treated lunch as open.",
+      "coverage": [
+        {
+          "id": "COV-WEST-JAN5",
+          "start": "2026-01-05T00:00Z",
+          "end": "2026-01-06T00:00Z"
+        }
+      ],
+      "open_intervals": [
+        {
+          "id": "OPEN-WEST-V1-09-14",
+          "start": "2026-01-05T09:00Z",
+          "end": "2026-01-05T14:00Z"
+        }
+      ]
+    },
+    {
+      "calendar_id": "WEST-UTC",
+      "service_point": "WEST",
+      "version": 2,
+      "visible_from_submit_no": 9,
+      "note": "Corrected lunch closure 12:00-13:00.",
+      "coverage": [
+        {
+          "id": "COV-WEST-JAN5",
+          "start": "2026-01-05T00:00Z",
+          "end": "2026-01-06T00:00Z"
+        }
+      ],
+      "open_intervals": [
+        {
+          "id": "OPEN-WEST-V2-AM",
+          "start": "2026-01-05T09:00Z",
+          "end": "2026-01-05T12:00Z"
+        },
+        {
+          "id": "OPEN-WEST-V2-PM",
+          "start": "2026-01-05T13:00Z",
+          "end": "2026-01-05T17:00Z"
+        }
+      ]
+    }
+  ]
+}

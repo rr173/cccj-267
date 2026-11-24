@@ -1,0 +1,13 @@
+{
+  "submit_no": 7,
+  "records": [
+    {
+      "op": "revoke",
+      "version": 2,
+      "kind": "waiting",
+      "record_id": "W-REVOKE",
+      "case_id": "C-REVOKED-WAIT",
+      "reason": "erroneous wait interval; customer did not request materials"
+    }
+  ]
+}

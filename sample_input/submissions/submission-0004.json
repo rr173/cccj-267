@@ -1,0 +1,35 @@
+{
+  "submit_no": 4,
+  "records": [
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "level_change",
+      "record_id": "L-DOWN",
+      "case_id": "C-LEVEL-DOWN-UP",
+      "at": "2026-01-05T11:00Z",
+      "to_level": "PRIORITY",
+      "business_seq": 10
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "level_change",
+      "record_id": "L-UP",
+      "case_id": "C-LEVEL-DOWN-UP",
+      "at": "2026-01-05T13:00Z",
+      "to_level": "ENTERPRISE",
+      "business_seq": 10
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "level_change",
+      "record_id": "L-COMP",
+      "case_id": "C-COMPLETION-LEVEL",
+      "at": "2026-01-05T15:00Z",
+      "to_level": "PRIORITY",
+      "business_seq": 10
+    }
+  ]
+}

@@ -1,0 +1,3130 @@
+{
+  "restatement_type": "signed_close_side_by_side",
+  "schema_version": "1.0.0",
+  "close_id": "DAILY-2026-01-05",
+  "same_observation_as_of": "2026-01-06T00:00Z",
+  "original_signed_file": "/workspace/out/DAILY-2026-01-05.signed.json",
+  "original_integrity_check": {
+    "digest_valid": true,
+    "seal_valid": true,
+    "integrity_valid": true
+  },
+  "original_payload_sha256": "sha256:7c7f8188d98d58e429f02cdb3afe849cf1a3b7565c7027fc5df0c71d6ad9f1fc",
+  "restated_parameters": {
+    "observation_as_of": "2026-01-06T00:00Z",
+    "evidence_cutoff_submit_no": 10,
+    "contract_catalog_id": "SLA",
+    "contract_catalog_version_pin": null,
+    "calendar_version_pins": {
+      "WEST": 1
+    }
+  },
+  "change_summary": {
+    "changed_case_count": 2,
+    "status_flip_count": 2,
+    "transition_counts": {
+      "timeout->on_time": 1,
+      "on_time->timeout": 1
+    }
+  },
+  "status_flips": [
+    {
+      "case_id": "C-REPLACED-INTAKE",
+      "transition": "timeout->on_time",
+      "configuration_changes": {},
+      "before": {
+        "present": true,
+        "closed": true,
+        "issuable": true,
+        "timeliness": "timeout",
+        "used_minutes": 180,
+        "known_used_minutes": 180,
+        "breached": true,
+        "earliest_breach_at": "2026-01-05T11:01Z",
+        "blocking_reasons": [],
+        "calendar_version": 1,
+        "contract_catalog_version": 1
+      },
+      "after": {
+        "present": true,
+        "closed": true,
+        "issuable": true,
+        "timeliness": "on_time",
+        "used_minutes": 120,
+        "known_used_minutes": 120,
+        "breached": false,
+        "earliest_breach_at": null,
+        "blocking_reasons": [],
+        "calendar_version": 1,
+        "contract_catalog_version": 1
+      },
+      "added_source_refs": [
+        {
+          "record_id": "I-REPLACE",
+          "kind": "intake",
+          "version": 2,
+          "op": "put",
+          "submit_no": 8,
+          "selected_as_highest_visible_version": true,
+          "effective_state_as_of_cutoff": "active"
+        }
+      ],
+      "removed_source_refs": []
+    },
+    {
+      "case_id": "C-REVOKED-WAIT",
+      "transition": "on_time->timeout",
+      "configuration_changes": {},
+      "before": {
+        "present": true,
+        "closed": true,
+        "issuable": true,
+        "timeliness": "on_time",
+        "used_minutes": 120,
+        "known_used_minutes": 120,
+        "breached": false,
+        "earliest_breach_at": null,
+        "blocking_reasons": [],
+        "calendar_version": 1,
+        "contract_catalog_version": 1
+      },
+      "after": {
+        "present": true,
+        "closed": true,
+        "issuable": true,
+        "timeliness": "timeout",
+        "used_minutes": 180,
+        "known_used_minutes": 180,
+        "breached": true,
+        "earliest_breach_at": "2026-01-05T11:01Z",
+        "blocking_reasons": [],
+        "calendar_version": 1,
+        "contract_catalog_version": 1
+      },
+      "added_source_refs": [
+        {
+          "record_id": "W-REVOKE",
+          "kind": "waiting",
+          "version": 2,
+          "op": "revoke",
+          "submit_no": 7,
+          "selected_as_highest_visible_version": true,
+          "effective_state_as_of_cutoff": "revoked"
+        }
+      ],
+      "removed_source_refs": []
+    }
+  ],
+  "changes": {
+    "changed_case_count": 2,
+    "status_flip_count": 2,
+    "transition_counts": {
+      "timeout->on_time": 1,
+      "on_time->timeout": 1
+    },
+    "status_flips": [
+      {
+        "case_id": "C-REPLACED-INTAKE",
+        "transition": "timeout->on_time",
+        "configuration_changes": {},
+        "before": {
+          "present": true,
+          "closed": true,
+          "issuable": true,
+          "timeliness": "timeout",
+          "used_minutes": 180,
+          "known_used_minutes": 180,
+          "breached": true,
+          "earliest_breach_at": "2026-01-05T11:01Z",
+          "blocking_reasons": [],
+          "calendar_version": 1,
+          "contract_catalog_version": 1
+        },
+        "after": {
+          "present": true,
+          "closed": true,
+          "issuable": true,
+          "timeliness": "on_time",
+          "used_minutes": 120,
+          "known_used_minutes": 120,
+          "breached": false,
+          "earliest_breach_at": null,
+          "blocking_reasons": [],
+          "calendar_version": 1,
+          "contract_catalog_version": 1
+        },
+        "added_source_refs": [
+          {
+            "record_id": "I-REPLACE",
+            "kind": "intake",
+            "version": 2,
+            "op": "put",
+            "submit_no": 8,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active"
+          }
+        ],
+        "removed_source_refs": []
+      },
+      {
+        "case_id": "C-REVOKED-WAIT",
+        "transition": "on_time->timeout",
+        "configuration_changes": {},
+        "before": {
+          "present": true,
+          "closed": true,
+          "issuable": true,
+          "timeliness": "on_time",
+          "used_minutes": 120,
+          "known_used_minutes": 120,
+          "breached": false,
+          "earliest_breach_at": null,
+          "blocking_reasons": [],
+          "calendar_version": 1,
+          "contract_catalog_version": 1
+        },
+        "after": {
+          "present": true,
+          "closed": true,
+          "issuable": true,
+          "timeliness": "timeout",
+          "used_minutes": 180,
+          "known_used_minutes": 180,
+          "breached": true,
+          "earliest_breach_at": "2026-01-05T11:01Z",
+          "blocking_reasons": [],
+          "calendar_version": 1,
+          "contract_catalog_version": 1
+        },
+        "added_source_refs": [
+          {
+            "record_id": "W-REVOKE",
+            "kind": "waiting",
+            "version": 2,
+            "op": "revoke",
+            "submit_no": 7,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "revoked"
+          }
+        ],
+        "removed_source_refs": []
+      }
+    ],
+    "changed_cases": [
+      {
+        "case_id": "C-REPLACED-INTAKE",
+        "transition": "timeout->on_time",
+        "changed_fields": [
+          "breached",
+          "earliest_breach_at",
+          "known_used_minutes",
+          "timeliness",
+          "used_minutes"
+        ],
+        "configuration_changes": {},
+        "before": {
+          "present": true,
+          "closed": true,
+          "issuable": true,
+          "timeliness": "timeout",
+          "used_minutes": 180,
+          "known_used_minutes": 180,
+          "breached": true,
+          "earliest_breach_at": "2026-01-05T11:01Z",
+          "blocking_reasons": [],
+          "calendar_version": 1,
+          "contract_catalog_version": 1
+        },
+        "after": {
+          "present": true,
+          "closed": true,
+          "issuable": true,
+          "timeliness": "on_time",
+          "used_minutes": 120,
+          "known_used_minutes": 120,
+          "breached": false,
+          "earliest_breach_at": null,
+          "blocking_reasons": [],
+          "calendar_version": 1,
+          "contract_catalog_version": 1
+        },
+        "added_source_refs": [
+          {
+            "record_id": "I-REPLACE",
+            "kind": "intake",
+            "version": 2,
+            "op": "put",
+            "submit_no": 8,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active"
+          }
+        ],
+        "removed_source_refs": [],
+        "restated_sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-REPLACE",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-REPLACED-INTAKE",
+            "submit_no": 1,
+            "op_index": 5,
+            "business_seq": null,
+            "selected_as_highest_visible_version": false,
+            "effective_state_as_of_cutoff": "superseded_or_lower_version",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-REPLACE",
+              "case_id": "C-REPLACED-INTAKE",
+              "at": "2026-01-05T09:00Z",
+              "service_point": "EAST",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-REPLACE",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-REPLACED-INTAKE",
+            "submit_no": 2,
+            "op_index": 5,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-REPLACE",
+              "case_id": "C-REPLACED-INTAKE",
+              "at": "2026-01-05T12:00Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "I-REPLACE",
+            "version": 2,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-REPLACED-INTAKE",
+            "submit_no": 8,
+            "op_index": 0,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 2,
+              "kind": "intake",
+              "record_id": "I-REPLACE",
+              "case_id": "C-REPLACED-INTAKE",
+              "at": "2026-01-05T10:00Z",
+              "service_point": "EAST",
+              "level": "STD",
+              "reason": "scanner batch had wrong cover timestamp"
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-REVOKED-WAIT",
+        "transition": "on_time->timeout",
+        "changed_fields": [
+          "breached",
+          "earliest_breach_at",
+          "known_used_minutes",
+          "timeliness",
+          "used_minutes"
+        ],
+        "configuration_changes": {},
+        "before": {
+          "present": true,
+          "closed": true,
+          "issuable": true,
+          "timeliness": "on_time",
+          "used_minutes": 120,
+          "known_used_minutes": 120,
+          "breached": false,
+          "earliest_breach_at": null,
+          "blocking_reasons": [],
+          "calendar_version": 1,
+          "contract_catalog_version": 1
+        },
+        "after": {
+          "present": true,
+          "closed": true,
+          "issuable": true,
+          "timeliness": "timeout",
+          "used_minutes": 180,
+          "known_used_minutes": 180,
+          "breached": true,
+          "earliest_breach_at": "2026-01-05T11:01Z",
+          "blocking_reasons": [],
+          "calendar_version": 1,
+          "contract_catalog_version": 1
+        },
+        "added_source_refs": [
+          {
+            "record_id": "W-REVOKE",
+            "kind": "waiting",
+            "version": 2,
+            "op": "revoke",
+            "submit_no": 7,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "revoked"
+          }
+        ],
+        "removed_source_refs": [],
+        "restated_sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-REVOKE",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-REVOKED-WAIT",
+            "submit_no": 1,
+            "op_index": 4,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-REVOKE",
+              "case_id": "C-REVOKED-WAIT",
+              "at": "2026-01-05T09:00Z",
+              "service_point": "EAST",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-REVOKE",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-REVOKED-WAIT",
+            "submit_no": 2,
+            "op_index": 4,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-REVOKE",
+              "case_id": "C-REVOKED-WAIT",
+              "at": "2026-01-05T12:00Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "W-REVOKE",
+            "version": 1,
+            "op": "put",
+            "kind": "waiting",
+            "case_id": "C-REVOKED-WAIT",
+            "submit_no": 3,
+            "op_index": 1,
+            "business_seq": null,
+            "selected_as_highest_visible_version": false,
+            "effective_state_as_of_cutoff": "superseded_or_lower_version",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "waiting",
+              "record_id": "W-REVOKE",
+              "case_id": "C-REVOKED-WAIT",
+              "start": "2026-01-05T10:00Z",
+              "end": "2026-01-05T11:00Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "W-REVOKE",
+            "version": 2,
+            "op": "revoke",
+            "kind": "waiting",
+            "case_id": "C-REVOKED-WAIT",
+            "submit_no": 7,
+            "op_index": 0,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "revoked",
+            "record": {
+              "op": "revoke",
+              "version": 2,
+              "kind": "waiting",
+              "record_id": "W-REVOKE",
+              "case_id": "C-REVOKED-WAIT",
+              "reason": "erroneous wait interval; customer did not request materials"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "original_report": {
+    "report_type": "restatable_sla_time_limit_report",
+    "schema_version": "1.0.0",
+    "parameters": {
+      "observation_as_of": "2026-01-06T00:00Z",
+      "evidence_cutoff_submit_no": 5,
+      "contract_catalog_id": "SLA",
+      "contract_catalog_version_pin": null,
+      "calendar_version_pins": {}
+    },
+    "input_digests": {
+      "evidence": "sha256:09cfe66122eb910f86e40770f7bdfa853c39d94f50b2e606717501e8a90568c6",
+      "contracts": "sha256:9d45e89b41f59701d94ab2c5b5c5be230d878fb0a92a2cbe95bab36cbf06bfb7",
+      "calendars": "sha256:29b08a636842eb8b991184e6366a95a5e25d05e97e9629745bd99f188428da11"
+    },
+    "contract_catalog": {
+      "catalog_id": "SLA",
+      "version": 1,
+      "visible_from_submit_no": 1,
+      "digest": "sha256:786b7a31deb8b4616aa4b65decc41b3fc0a17dae9e24c85b8f27f54a15343bfb"
+    },
+    "selected_calendars": {
+      "WEST": {
+        "source_type": "calendar",
+        "service_point": "WEST",
+        "calendar_id": "WEST-UTC",
+        "version": 1,
+        "visible_from_submit_no": 1,
+        "coverage_intervals": [
+          {
+            "start": "2026-01-05T00:00Z",
+            "end": "2026-01-06T00:00Z",
+            "minutes": 1440
+          }
+        ]
+      },
+      "EAST": {
+        "source_type": "calendar",
+        "service_point": "EAST",
+        "calendar_id": "EAST-UTC",
+        "version": 1,
+        "visible_from_submit_no": 1,
+        "coverage_intervals": [
+          {
+            "start": "2025-12-31T23:00Z",
+            "end": "2026-01-01T01:00Z",
+            "minutes": 120
+          },
+          {
+            "start": "2026-01-05T00:00Z",
+            "end": "2026-01-06T00:00Z",
+            "minutes": 1440
+          }
+        ]
+      },
+      "NORTH": null
+    },
+    "evidence_issues": [],
+    "summary": {
+      "total_case_records": 9,
+      "issuable": 8,
+      "closed": 9,
+      "on_time": 4,
+      "timeout": 4,
+      "indeterminate": 1,
+      "not_started_before_observation": 0
+    },
+    "cases": [
+      {
+        "case_id": "C-CALENDAR-FIX",
+        "issuable": true,
+        "included": true,
+        "closed": true,
+        "timeliness": "timeout",
+        "used_minutes": 300,
+        "known_used_minutes": 300,
+        "breached": true,
+        "earliest_breach": {
+          "at": "2026-01-05T13:01Z",
+          "kind": "counted_minute_right_boundary",
+          "counted_minute_start": "2026-01-05T13:00Z",
+          "counted_minute_end": "2026-01-05T13:01Z",
+          "level_during_minute": "EXTENDED",
+          "quota_minutes": 240,
+          "used_minutes_after_increment": 241,
+          "calendar_id": "WEST-UTC",
+          "calendar_version": 1,
+          "open_interval_id": "OPEN-WEST-V1-09-14",
+          "intake_record_id": "I-CAL"
+        },
+        "known_breach": null,
+        "intake_at": "2026-01-05T09:00Z",
+        "completion_at": "2026-01-05T14:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-05T14:00Z",
+        "service_point": "WEST",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": {
+          "source_type": "calendar",
+          "service_point": "WEST",
+          "calendar_id": "WEST-UTC",
+          "version": 1,
+          "visible_from_submit_no": 1,
+          "coverage_intervals": [
+            {
+              "start": "2026-01-05T00:00Z",
+              "end": "2026-01-06T00:00Z",
+              "minutes": 1440
+            }
+          ]
+        },
+        "level_at_intake": "EXTENDED",
+        "current_level": "EXTENDED",
+        "quota_minutes": 240,
+        "blocking_reasons": [],
+        "coverage_gaps": [],
+        "effective_wait_intervals": [],
+        "billable_intervals": [
+          {
+            "start": "2026-01-05T09:00Z",
+            "end": "2026-01-05T14:00Z",
+            "minutes": 300
+          }
+        ],
+        "level_timeline": [],
+        "selected_source_record_ids": [
+          "I-CAL",
+          "X-CAL"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-CAL",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-CALENDAR-FIX",
+            "submit_no": 1,
+            "op_index": 6,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-CAL",
+              "case_id": "C-CALENDAR-FIX",
+              "at": "2026-01-05T09:00Z",
+              "service_point": "WEST",
+              "level": "EXTENDED"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-CAL",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-CALENDAR-FIX",
+            "submit_no": 2,
+            "op_index": 6,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-CAL",
+              "case_id": "C-CALENDAR-FIX",
+              "at": "2026-01-05T14:00Z"
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-COMPLETION-LEVEL",
+        "issuable": true,
+        "included": true,
+        "closed": true,
+        "timeliness": "on_time",
+        "used_minutes": 120,
+        "known_used_minutes": 120,
+        "breached": false,
+        "earliest_breach": null,
+        "known_breach": null,
+        "intake_at": "2026-01-05T13:00Z",
+        "completion_at": "2026-01-05T15:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-05T15:00Z",
+        "service_point": "EAST",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": {
+          "source_type": "calendar",
+          "service_point": "EAST",
+          "calendar_id": "EAST-UTC",
+          "version": 1,
+          "visible_from_submit_no": 1,
+          "coverage_intervals": [
+            {
+              "start": "2025-12-31T23:00Z",
+              "end": "2026-01-01T01:00Z",
+              "minutes": 120
+            },
+            {
+              "start": "2026-01-05T00:00Z",
+              "end": "2026-01-06T00:00Z",
+              "minutes": 1440
+            }
+          ]
+        },
+        "level_at_intake": "STD",
+        "current_level": "STD",
+        "quota_minutes": 120,
+        "blocking_reasons": [],
+        "coverage_gaps": [],
+        "effective_wait_intervals": [],
+        "billable_intervals": [
+          {
+            "start": "2026-01-05T13:00Z",
+            "end": "2026-01-05T15:00Z",
+            "minutes": 120
+          }
+        ],
+        "level_timeline": [
+          {
+            "at": "2026-01-05T15:00Z",
+            "to_level": "PRIORITY",
+            "source_record_id": "L-COMP",
+            "submit_no": 4,
+            "version": 1,
+            "business_seq": 10,
+            "applied": false,
+            "reason": "level_change_at_completion_boundary_not_applied"
+          }
+        ],
+        "selected_source_record_ids": [
+          "I-COMP-LEVEL",
+          "L-COMP",
+          "X-COMP-LEVEL"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-COMP-LEVEL",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-COMPLETION-LEVEL",
+            "submit_no": 1,
+            "op_index": 3,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-COMP-LEVEL",
+              "case_id": "C-COMPLETION-LEVEL",
+              "at": "2026-01-05T13:00Z",
+              "service_point": "EAST",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-COMP-LEVEL",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-COMPLETION-LEVEL",
+            "submit_no": 2,
+            "op_index": 3,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-COMP-LEVEL",
+              "case_id": "C-COMPLETION-LEVEL",
+              "at": "2026-01-05T15:00Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "L-COMP",
+            "version": 1,
+            "op": "put",
+            "kind": "level_change",
+            "case_id": "C-COMPLETION-LEVEL",
+            "submit_no": 4,
+            "op_index": 2,
+            "business_seq": 10,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "level_change",
+              "record_id": "L-COMP",
+              "case_id": "C-COMPLETION-LEVEL",
+              "at": "2026-01-05T15:00Z",
+              "to_level": "PRIORITY",
+              "business_seq": 10
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-LEVEL-DOWN-UP",
+        "issuable": true,
+        "included": true,
+        "closed": true,
+        "timeliness": "timeout",
+        "used_minutes": 420,
+        "known_used_minutes": 420,
+        "breached": true,
+        "earliest_breach": {
+          "at": "2026-01-05T11:00Z",
+          "kind": "level_change",
+          "level_after_change": "PRIORITY",
+          "quota_minutes": 60,
+          "used_minutes_at_boundary": 120,
+          "source_record_id": "L-DOWN",
+          "source_submit_no": 4,
+          "source_version": 1,
+          "business_seq": 10
+        },
+        "known_breach": null,
+        "intake_at": "2026-01-05T09:00Z",
+        "completion_at": "2026-01-05T17:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-05T17:00Z",
+        "service_point": "EAST",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": {
+          "source_type": "calendar",
+          "service_point": "EAST",
+          "calendar_id": "EAST-UTC",
+          "version": 1,
+          "visible_from_submit_no": 1,
+          "coverage_intervals": [
+            {
+              "start": "2025-12-31T23:00Z",
+              "end": "2026-01-01T01:00Z",
+              "minutes": 120
+            },
+            {
+              "start": "2026-01-05T00:00Z",
+              "end": "2026-01-06T00:00Z",
+              "minutes": 1440
+            }
+          ]
+        },
+        "level_at_intake": "STD",
+        "current_level": "ENTERPRISE",
+        "quota_minutes": 480,
+        "blocking_reasons": [],
+        "coverage_gaps": [],
+        "effective_wait_intervals": [],
+        "billable_intervals": [
+          {
+            "start": "2026-01-05T09:00Z",
+            "end": "2026-01-05T12:00Z",
+            "minutes": 180
+          },
+          {
+            "start": "2026-01-05T13:00Z",
+            "end": "2026-01-05T17:00Z",
+            "minutes": 240
+          }
+        ],
+        "level_timeline": [
+          {
+            "at": "2026-01-05T11:00Z",
+            "to_level": "PRIORITY",
+            "quota_minutes": 60,
+            "used_minutes_at_boundary": 120,
+            "source_record_id": "L-DOWN",
+            "submit_no": 4,
+            "version": 1,
+            "business_seq": 10,
+            "applied": true
+          },
+          {
+            "at": "2026-01-05T13:00Z",
+            "to_level": "ENTERPRISE",
+            "quota_minutes": 480,
+            "used_minutes_at_boundary": 180,
+            "source_record_id": "L-UP",
+            "submit_no": 4,
+            "version": 1,
+            "business_seq": 10,
+            "applied": true
+          }
+        ],
+        "selected_source_record_ids": [
+          "I-LEVEL",
+          "L-DOWN",
+          "L-UP",
+          "X-LEVEL"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-LEVEL",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-LEVEL-DOWN-UP",
+            "submit_no": 1,
+            "op_index": 2,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-LEVEL",
+              "case_id": "C-LEVEL-DOWN-UP",
+              "at": "2026-01-05T09:00Z",
+              "service_point": "EAST",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-LEVEL",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-LEVEL-DOWN-UP",
+            "submit_no": 2,
+            "op_index": 2,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-LEVEL",
+              "case_id": "C-LEVEL-DOWN-UP",
+              "at": "2026-01-05T17:00Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "L-DOWN",
+            "version": 1,
+            "op": "put",
+            "kind": "level_change",
+            "case_id": "C-LEVEL-DOWN-UP",
+            "submit_no": 4,
+            "op_index": 0,
+            "business_seq": 10,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "level_change",
+              "record_id": "L-DOWN",
+              "case_id": "C-LEVEL-DOWN-UP",
+              "at": "2026-01-05T11:00Z",
+              "to_level": "PRIORITY",
+              "business_seq": 10
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "L-UP",
+            "version": 1,
+            "op": "put",
+            "kind": "level_change",
+            "case_id": "C-LEVEL-DOWN-UP",
+            "submit_no": 4,
+            "op_index": 1,
+            "business_seq": 10,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "level_change",
+              "record_id": "L-UP",
+              "case_id": "C-LEVEL-DOWN-UP",
+              "at": "2026-01-05T13:00Z",
+              "to_level": "ENTERPRISE",
+              "business_seq": 10
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-NO-CALENDAR",
+        "issuable": false,
+        "included": true,
+        "closed": true,
+        "timeliness": "indeterminate",
+        "used_minutes": null,
+        "known_used_minutes": 0,
+        "breached": null,
+        "earliest_breach": null,
+        "known_breach": null,
+        "intake_at": "2026-01-05T09:00Z",
+        "completion_at": "2026-01-05T17:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-05T17:00Z",
+        "service_point": "NORTH",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": null,
+        "level_at_intake": "STD",
+        "current_level": "STD",
+        "quota_minutes": 120,
+        "blocking_reasons": [
+          "calendar_not_found_for_service_point:NORTH"
+        ],
+        "coverage_gaps": [
+          {
+            "start": "2026-01-05T09:00Z",
+            "end": "2026-01-05T17:00Z",
+            "minutes": 480
+          }
+        ],
+        "effective_wait_intervals": [],
+        "billable_intervals": [],
+        "level_timeline": [],
+        "selected_source_record_ids": [
+          "I-NOCAL",
+          "X-NOCAL"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-NOCAL",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-NO-CALENDAR",
+            "submit_no": 1,
+            "op_index": 7,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-NOCAL",
+              "case_id": "C-NO-CALENDAR",
+              "at": "2026-01-05T09:00Z",
+              "service_point": "NORTH",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-NOCAL",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-NO-CALENDAR",
+            "submit_no": 2,
+            "op_index": 7,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-NOCAL",
+              "case_id": "C-NO-CALENDAR",
+              "at": "2026-01-05T17:00Z"
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-RECOVERY",
+        "issuable": true,
+        "included": true,
+        "closed": true,
+        "timeliness": "timeout",
+        "used_minutes": 121,
+        "known_used_minutes": 121,
+        "breached": true,
+        "earliest_breach": {
+          "at": "2026-01-05T12:00Z",
+          "kind": "counted_minute_right_boundary",
+          "counted_minute_start": "2026-01-05T11:59Z",
+          "counted_minute_end": "2026-01-05T12:00Z",
+          "level_during_minute": "STD",
+          "quota_minutes": 120,
+          "used_minutes_after_increment": 121,
+          "calendar_id": "EAST-UTC",
+          "calendar_version": 1,
+          "open_interval_id": "OPEN-JAN5-AM",
+          "intake_record_id": "I-RECOVERY"
+        },
+        "known_breach": null,
+        "intake_at": "2026-01-05T09:00Z",
+        "completion_at": "2026-01-05T12:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-05T12:00Z",
+        "service_point": "EAST",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": {
+          "source_type": "calendar",
+          "service_point": "EAST",
+          "calendar_id": "EAST-UTC",
+          "version": 1,
+          "visible_from_submit_no": 1,
+          "coverage_intervals": [
+            {
+              "start": "2025-12-31T23:00Z",
+              "end": "2026-01-01T01:00Z",
+              "minutes": 120
+            },
+            {
+              "start": "2026-01-05T00:00Z",
+              "end": "2026-01-06T00:00Z",
+              "minutes": 1440
+            }
+          ]
+        },
+        "level_at_intake": "STD",
+        "current_level": "STD",
+        "quota_minutes": 120,
+        "blocking_reasons": [],
+        "coverage_gaps": [],
+        "effective_wait_intervals": [
+          {
+            "start": "2026-01-05T10:00Z",
+            "end": "2026-01-05T10:30Z",
+            "minutes": 30
+          },
+          {
+            "start": "2026-01-05T10:31Z",
+            "end": "2026-01-05T11:00Z",
+            "minutes": 29
+          }
+        ],
+        "billable_intervals": [
+          {
+            "start": "2026-01-05T09:00Z",
+            "end": "2026-01-05T10:00Z",
+            "minutes": 60
+          },
+          {
+            "start": "2026-01-05T10:30Z",
+            "end": "2026-01-05T10:31Z",
+            "minutes": 1
+          },
+          {
+            "start": "2026-01-05T11:00Z",
+            "end": "2026-01-05T12:00Z",
+            "minutes": 60
+          }
+        ],
+        "level_timeline": [],
+        "selected_source_record_ids": [
+          "I-RECOVERY",
+          "W-REC-A",
+          "W-REC-B",
+          "W-REC-C",
+          "X-RECOVERY"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-RECOVERY",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-RECOVERY",
+            "submit_no": 1,
+            "op_index": 1,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-RECOVERY",
+              "case_id": "C-RECOVERY",
+              "at": "2026-01-05T09:00Z",
+              "service_point": "EAST",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-RECOVERY",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-RECOVERY",
+            "submit_no": 2,
+            "op_index": 1,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-RECOVERY",
+              "case_id": "C-RECOVERY",
+              "at": "2026-01-05T12:00Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "W-REC-A",
+            "version": 1,
+            "op": "put",
+            "kind": "waiting",
+            "case_id": "C-RECOVERY",
+            "submit_no": 3,
+            "op_index": 2,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "waiting",
+              "record_id": "W-REC-A",
+              "case_id": "C-RECOVERY",
+              "start": "2026-01-05T10:00Z",
+              "end": "2026-01-05T10:30Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "W-REC-B",
+            "version": 1,
+            "op": "put",
+            "kind": "waiting",
+            "case_id": "C-RECOVERY",
+            "submit_no": 3,
+            "op_index": 3,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "waiting",
+              "record_id": "W-REC-B",
+              "case_id": "C-RECOVERY",
+              "start": "2026-01-05T10:20Z",
+              "end": "2026-01-05T10:30Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "W-REC-C",
+            "version": 1,
+            "op": "put",
+            "kind": "waiting",
+            "case_id": "C-RECOVERY",
+            "submit_no": 3,
+            "op_index": 4,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "waiting",
+              "record_id": "W-REC-C",
+              "case_id": "C-RECOVERY",
+              "start": "2026-01-05T10:31Z",
+              "end": "2026-01-05T11:00Z"
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-REPLACED-INTAKE",
+        "issuable": true,
+        "included": true,
+        "closed": true,
+        "timeliness": "timeout",
+        "used_minutes": 180,
+        "known_used_minutes": 180,
+        "breached": true,
+        "earliest_breach": {
+          "at": "2026-01-05T11:01Z",
+          "kind": "counted_minute_right_boundary",
+          "counted_minute_start": "2026-01-05T11:00Z",
+          "counted_minute_end": "2026-01-05T11:01Z",
+          "level_during_minute": "STD",
+          "quota_minutes": 120,
+          "used_minutes_after_increment": 121,
+          "calendar_id": "EAST-UTC",
+          "calendar_version": 1,
+          "open_interval_id": "OPEN-JAN5-AM",
+          "intake_record_id": "I-REPLACE"
+        },
+        "known_breach": null,
+        "intake_at": "2026-01-05T09:00Z",
+        "completion_at": "2026-01-05T12:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-05T12:00Z",
+        "service_point": "EAST",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": {
+          "source_type": "calendar",
+          "service_point": "EAST",
+          "calendar_id": "EAST-UTC",
+          "version": 1,
+          "visible_from_submit_no": 1,
+          "coverage_intervals": [
+            {
+              "start": "2025-12-31T23:00Z",
+              "end": "2026-01-01T01:00Z",
+              "minutes": 120
+            },
+            {
+              "start": "2026-01-05T00:00Z",
+              "end": "2026-01-06T00:00Z",
+              "minutes": 1440
+            }
+          ]
+        },
+        "level_at_intake": "STD",
+        "current_level": "STD",
+        "quota_minutes": 120,
+        "blocking_reasons": [],
+        "coverage_gaps": [],
+        "effective_wait_intervals": [],
+        "billable_intervals": [
+          {
+            "start": "2026-01-05T09:00Z",
+            "end": "2026-01-05T12:00Z",
+            "minutes": 180
+          }
+        ],
+        "level_timeline": [],
+        "selected_source_record_ids": [
+          "I-REPLACE",
+          "X-REPLACE"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-REPLACE",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-REPLACED-INTAKE",
+            "submit_no": 1,
+            "op_index": 5,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-REPLACE",
+              "case_id": "C-REPLACED-INTAKE",
+              "at": "2026-01-05T09:00Z",
+              "service_point": "EAST",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-REPLACE",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-REPLACED-INTAKE",
+            "submit_no": 2,
+            "op_index": 5,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-REPLACE",
+              "case_id": "C-REPLACED-INTAKE",
+              "at": "2026-01-05T12:00Z"
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-REVOKED-WAIT",
+        "issuable": true,
+        "included": true,
+        "closed": true,
+        "timeliness": "on_time",
+        "used_minutes": 120,
+        "known_used_minutes": 120,
+        "breached": false,
+        "earliest_breach": null,
+        "known_breach": null,
+        "intake_at": "2026-01-05T09:00Z",
+        "completion_at": "2026-01-05T12:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-05T12:00Z",
+        "service_point": "EAST",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": {
+          "source_type": "calendar",
+          "service_point": "EAST",
+          "calendar_id": "EAST-UTC",
+          "version": 1,
+          "visible_from_submit_no": 1,
+          "coverage_intervals": [
+            {
+              "start": "2025-12-31T23:00Z",
+              "end": "2026-01-01T01:00Z",
+              "minutes": 120
+            },
+            {
+              "start": "2026-01-05T00:00Z",
+              "end": "2026-01-06T00:00Z",
+              "minutes": 1440
+            }
+          ]
+        },
+        "level_at_intake": "STD",
+        "current_level": "STD",
+        "quota_minutes": 120,
+        "blocking_reasons": [],
+        "coverage_gaps": [],
+        "effective_wait_intervals": [
+          {
+            "start": "2026-01-05T10:00Z",
+            "end": "2026-01-05T11:00Z",
+            "minutes": 60
+          }
+        ],
+        "billable_intervals": [
+          {
+            "start": "2026-01-05T09:00Z",
+            "end": "2026-01-05T10:00Z",
+            "minutes": 60
+          },
+          {
+            "start": "2026-01-05T11:00Z",
+            "end": "2026-01-05T12:00Z",
+            "minutes": 60
+          }
+        ],
+        "level_timeline": [],
+        "selected_source_record_ids": [
+          "I-REVOKE",
+          "W-REVOKE",
+          "X-REVOKE"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-REVOKE",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-REVOKED-WAIT",
+            "submit_no": 1,
+            "op_index": 4,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-REVOKE",
+              "case_id": "C-REVOKED-WAIT",
+              "at": "2026-01-05T09:00Z",
+              "service_point": "EAST",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-REVOKE",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-REVOKED-WAIT",
+            "submit_no": 2,
+            "op_index": 4,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-REVOKE",
+              "case_id": "C-REVOKED-WAIT",
+              "at": "2026-01-05T12:00Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "W-REVOKE",
+            "version": 1,
+            "op": "put",
+            "kind": "waiting",
+            "case_id": "C-REVOKED-WAIT",
+            "submit_no": 3,
+            "op_index": 1,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "waiting",
+              "record_id": "W-REVOKE",
+              "case_id": "C-REVOKED-WAIT",
+              "start": "2026-01-05T10:00Z",
+              "end": "2026-01-05T11:00Z"
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-WAIT-EXACT",
+        "issuable": true,
+        "included": true,
+        "closed": true,
+        "timeliness": "on_time",
+        "used_minutes": 120,
+        "known_used_minutes": 120,
+        "breached": false,
+        "earliest_breach": null,
+        "known_breach": null,
+        "intake_at": "2026-01-05T09:00Z",
+        "completion_at": "2026-01-05T12:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-05T12:00Z",
+        "service_point": "EAST",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": {
+          "source_type": "calendar",
+          "service_point": "EAST",
+          "calendar_id": "EAST-UTC",
+          "version": 1,
+          "visible_from_submit_no": 1,
+          "coverage_intervals": [
+            {
+              "start": "2025-12-31T23:00Z",
+              "end": "2026-01-01T01:00Z",
+              "minutes": 120
+            },
+            {
+              "start": "2026-01-05T00:00Z",
+              "end": "2026-01-06T00:00Z",
+              "minutes": 1440
+            }
+          ]
+        },
+        "level_at_intake": "STD",
+        "current_level": "STD",
+        "quota_minutes": 120,
+        "blocking_reasons": [],
+        "coverage_gaps": [],
+        "effective_wait_intervals": [
+          {
+            "start": "2026-01-05T10:00Z",
+            "end": "2026-01-05T11:00Z",
+            "minutes": 60
+          }
+        ],
+        "billable_intervals": [
+          {
+            "start": "2026-01-05T09:00Z",
+            "end": "2026-01-05T10:00Z",
+            "minutes": 60
+          },
+          {
+            "start": "2026-01-05T11:00Z",
+            "end": "2026-01-05T12:00Z",
+            "minutes": 60
+          }
+        ],
+        "level_timeline": [],
+        "selected_source_record_ids": [
+          "I-WAIT-EXACT",
+          "W-EXACT",
+          "X-WAIT-EXACT"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-WAIT-EXACT",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-WAIT-EXACT",
+            "submit_no": 1,
+            "op_index": 0,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-WAIT-EXACT",
+              "case_id": "C-WAIT-EXACT",
+              "at": "2026-01-05T09:00Z",
+              "service_point": "EAST",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-WAIT-EXACT",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-WAIT-EXACT",
+            "submit_no": 2,
+            "op_index": 0,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-WAIT-EXACT",
+              "case_id": "C-WAIT-EXACT",
+              "at": "2026-01-05T12:00Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "W-EXACT",
+            "version": 1,
+            "op": "put",
+            "kind": "waiting",
+            "case_id": "C-WAIT-EXACT",
+            "submit_no": 3,
+            "op_index": 0,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "waiting",
+              "record_id": "W-EXACT",
+              "case_id": "C-WAIT-EXACT",
+              "start": "2026-01-05T10:00Z",
+              "end": "2026-01-05T11:00Z"
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-YEAR-BOUNDARY",
+        "issuable": true,
+        "included": true,
+        "closed": true,
+        "timeliness": "on_time",
+        "used_minutes": 120,
+        "known_used_minutes": 120,
+        "breached": false,
+        "earliest_breach": null,
+        "known_breach": null,
+        "intake_at": "2025-12-31T23:00Z",
+        "completion_at": "2026-01-01T01:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-01T01:00Z",
+        "service_point": "EAST",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": {
+          "source_type": "calendar",
+          "service_point": "EAST",
+          "calendar_id": "EAST-UTC",
+          "version": 1,
+          "visible_from_submit_no": 1,
+          "coverage_intervals": [
+            {
+              "start": "2025-12-31T23:00Z",
+              "end": "2026-01-01T01:00Z",
+              "minutes": 120
+            },
+            {
+              "start": "2026-01-05T00:00Z",
+              "end": "2026-01-06T00:00Z",
+              "minutes": 1440
+            }
+          ]
+        },
+        "level_at_intake": "STD",
+        "current_level": "STD",
+        "quota_minutes": 120,
+        "blocking_reasons": [],
+        "coverage_gaps": [],
+        "effective_wait_intervals": [],
+        "billable_intervals": [
+          {
+            "start": "2025-12-31T23:00Z",
+            "end": "2026-01-01T01:00Z",
+            "minutes": 120
+          }
+        ],
+        "level_timeline": [],
+        "selected_source_record_ids": [
+          "I-YEAR",
+          "X-YEAR"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-YEAR",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-YEAR-BOUNDARY",
+            "submit_no": 1,
+            "op_index": 8,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-YEAR",
+              "case_id": "C-YEAR-BOUNDARY",
+              "at": "2025-12-31T23:00Z",
+              "service_point": "EAST",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-YEAR",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-YEAR-BOUNDARY",
+            "submit_no": 2,
+            "op_index": 8,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-YEAR",
+              "case_id": "C-YEAR-BOUNDARY",
+              "at": "2026-01-01T01:00Z"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "restated_report": {
+    "report_type": "restatable_sla_time_limit_report",
+    "schema_version": "1.0.0",
+    "parameters": {
+      "observation_as_of": "2026-01-06T00:00Z",
+      "evidence_cutoff_submit_no": 10,
+      "contract_catalog_id": "SLA",
+      "contract_catalog_version_pin": null,
+      "calendar_version_pins": {
+        "WEST": 1
+      }
+    },
+    "input_digests": {
+      "evidence": "sha256:09cfe66122eb910f86e40770f7bdfa853c39d94f50b2e606717501e8a90568c6",
+      "contracts": "sha256:9d45e89b41f59701d94ab2c5b5c5be230d878fb0a92a2cbe95bab36cbf06bfb7",
+      "calendars": "sha256:29b08a636842eb8b991184e6366a95a5e25d05e97e9629745bd99f188428da11",
+      "signed_original": "sha256:18015045c20968f0bb2b6e0604c529c6abf426ce5c74efef3c2dcedfbb53cf83"
+    },
+    "contract_catalog": {
+      "catalog_id": "SLA",
+      "version": 1,
+      "visible_from_submit_no": 1,
+      "digest": "sha256:786b7a31deb8b4616aa4b65decc41b3fc0a17dae9e24c85b8f27f54a15343bfb"
+    },
+    "selected_calendars": {
+      "WEST": {
+        "source_type": "calendar",
+        "service_point": "WEST",
+        "calendar_id": "WEST-UTC",
+        "version": 1,
+        "visible_from_submit_no": 1,
+        "coverage_intervals": [
+          {
+            "start": "2026-01-05T00:00Z",
+            "end": "2026-01-06T00:00Z",
+            "minutes": 1440
+          }
+        ]
+      },
+      "EAST": {
+        "source_type": "calendar",
+        "service_point": "EAST",
+        "calendar_id": "EAST-UTC",
+        "version": 1,
+        "visible_from_submit_no": 1,
+        "coverage_intervals": [
+          {
+            "start": "2025-12-31T23:00Z",
+            "end": "2026-01-01T01:00Z",
+            "minutes": 120
+          },
+          {
+            "start": "2026-01-05T00:00Z",
+            "end": "2026-01-06T00:00Z",
+            "minutes": 1440
+          }
+        ]
+      },
+      "NORTH": null
+    },
+    "evidence_issues": [],
+    "summary": {
+      "total_case_records": 9,
+      "issuable": 8,
+      "closed": 9,
+      "on_time": 4,
+      "timeout": 4,
+      "indeterminate": 1,
+      "not_started_before_observation": 0
+    },
+    "cases": [
+      {
+        "case_id": "C-CALENDAR-FIX",
+        "issuable": true,
+        "included": true,
+        "closed": true,
+        "timeliness": "timeout",
+        "used_minutes": 300,
+        "known_used_minutes": 300,
+        "breached": true,
+        "earliest_breach": {
+          "at": "2026-01-05T13:01Z",
+          "kind": "counted_minute_right_boundary",
+          "counted_minute_start": "2026-01-05T13:00Z",
+          "counted_minute_end": "2026-01-05T13:01Z",
+          "level_during_minute": "EXTENDED",
+          "quota_minutes": 240,
+          "used_minutes_after_increment": 241,
+          "calendar_id": "WEST-UTC",
+          "calendar_version": 1,
+          "open_interval_id": "OPEN-WEST-V1-09-14",
+          "intake_record_id": "I-CAL"
+        },
+        "known_breach": null,
+        "intake_at": "2026-01-05T09:00Z",
+        "completion_at": "2026-01-05T14:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-05T14:00Z",
+        "service_point": "WEST",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": {
+          "source_type": "calendar",
+          "service_point": "WEST",
+          "calendar_id": "WEST-UTC",
+          "version": 1,
+          "visible_from_submit_no": 1,
+          "coverage_intervals": [
+            {
+              "start": "2026-01-05T00:00Z",
+              "end": "2026-01-06T00:00Z",
+              "minutes": 1440
+            }
+          ]
+        },
+        "level_at_intake": "EXTENDED",
+        "current_level": "EXTENDED",
+        "quota_minutes": 240,
+        "blocking_reasons": [],
+        "coverage_gaps": [],
+        "effective_wait_intervals": [],
+        "billable_intervals": [
+          {
+            "start": "2026-01-05T09:00Z",
+            "end": "2026-01-05T14:00Z",
+            "minutes": 300
+          }
+        ],
+        "level_timeline": [],
+        "selected_source_record_ids": [
+          "I-CAL",
+          "X-CAL"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-CAL",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-CALENDAR-FIX",
+            "submit_no": 1,
+            "op_index": 6,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-CAL",
+              "case_id": "C-CALENDAR-FIX",
+              "at": "2026-01-05T09:00Z",
+              "service_point": "WEST",
+              "level": "EXTENDED"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-CAL",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-CALENDAR-FIX",
+            "submit_no": 2,
+            "op_index": 6,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-CAL",
+              "case_id": "C-CALENDAR-FIX",
+              "at": "2026-01-05T14:00Z"
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-COMPLETION-LEVEL",
+        "issuable": true,
+        "included": true,
+        "closed": true,
+        "timeliness": "on_time",
+        "used_minutes": 120,
+        "known_used_minutes": 120,
+        "breached": false,
+        "earliest_breach": null,
+        "known_breach": null,
+        "intake_at": "2026-01-05T13:00Z",
+        "completion_at": "2026-01-05T15:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-05T15:00Z",
+        "service_point": "EAST",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": {
+          "source_type": "calendar",
+          "service_point": "EAST",
+          "calendar_id": "EAST-UTC",
+          "version": 1,
+          "visible_from_submit_no": 1,
+          "coverage_intervals": [
+            {
+              "start": "2025-12-31T23:00Z",
+              "end": "2026-01-01T01:00Z",
+              "minutes": 120
+            },
+            {
+              "start": "2026-01-05T00:00Z",
+              "end": "2026-01-06T00:00Z",
+              "minutes": 1440
+            }
+          ]
+        },
+        "level_at_intake": "STD",
+        "current_level": "STD",
+        "quota_minutes": 120,
+        "blocking_reasons": [],
+        "coverage_gaps": [],
+        "effective_wait_intervals": [],
+        "billable_intervals": [
+          {
+            "start": "2026-01-05T13:00Z",
+            "end": "2026-01-05T15:00Z",
+            "minutes": 120
+          }
+        ],
+        "level_timeline": [
+          {
+            "at": "2026-01-05T15:00Z",
+            "to_level": "PRIORITY",
+            "source_record_id": "L-COMP",
+            "submit_no": 4,
+            "version": 1,
+            "business_seq": 10,
+            "applied": false,
+            "reason": "level_change_at_completion_boundary_not_applied"
+          }
+        ],
+        "selected_source_record_ids": [
+          "I-COMP-LEVEL",
+          "L-COMP",
+          "X-COMP-LEVEL"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-COMP-LEVEL",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-COMPLETION-LEVEL",
+            "submit_no": 1,
+            "op_index": 3,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-COMP-LEVEL",
+              "case_id": "C-COMPLETION-LEVEL",
+              "at": "2026-01-05T13:00Z",
+              "service_point": "EAST",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-COMP-LEVEL",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-COMPLETION-LEVEL",
+            "submit_no": 2,
+            "op_index": 3,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-COMP-LEVEL",
+              "case_id": "C-COMPLETION-LEVEL",
+              "at": "2026-01-05T15:00Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "L-COMP",
+            "version": 1,
+            "op": "put",
+            "kind": "level_change",
+            "case_id": "C-COMPLETION-LEVEL",
+            "submit_no": 4,
+            "op_index": 2,
+            "business_seq": 10,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "level_change",
+              "record_id": "L-COMP",
+              "case_id": "C-COMPLETION-LEVEL",
+              "at": "2026-01-05T15:00Z",
+              "to_level": "PRIORITY",
+              "business_seq": 10
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-LEVEL-DOWN-UP",
+        "issuable": true,
+        "included": true,
+        "closed": true,
+        "timeliness": "timeout",
+        "used_minutes": 420,
+        "known_used_minutes": 420,
+        "breached": true,
+        "earliest_breach": {
+          "at": "2026-01-05T11:00Z",
+          "kind": "level_change",
+          "level_after_change": "PRIORITY",
+          "quota_minutes": 60,
+          "used_minutes_at_boundary": 120,
+          "source_record_id": "L-DOWN",
+          "source_submit_no": 4,
+          "source_version": 1,
+          "business_seq": 10
+        },
+        "known_breach": null,
+        "intake_at": "2026-01-05T09:00Z",
+        "completion_at": "2026-01-05T17:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-05T17:00Z",
+        "service_point": "EAST",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": {
+          "source_type": "calendar",
+          "service_point": "EAST",
+          "calendar_id": "EAST-UTC",
+          "version": 1,
+          "visible_from_submit_no": 1,
+          "coverage_intervals": [
+            {
+              "start": "2025-12-31T23:00Z",
+              "end": "2026-01-01T01:00Z",
+              "minutes": 120
+            },
+            {
+              "start": "2026-01-05T00:00Z",
+              "end": "2026-01-06T00:00Z",
+              "minutes": 1440
+            }
+          ]
+        },
+        "level_at_intake": "STD",
+        "current_level": "ENTERPRISE",
+        "quota_minutes": 480,
+        "blocking_reasons": [],
+        "coverage_gaps": [],
+        "effective_wait_intervals": [],
+        "billable_intervals": [
+          {
+            "start": "2026-01-05T09:00Z",
+            "end": "2026-01-05T12:00Z",
+            "minutes": 180
+          },
+          {
+            "start": "2026-01-05T13:00Z",
+            "end": "2026-01-05T17:00Z",
+            "minutes": 240
+          }
+        ],
+        "level_timeline": [
+          {
+            "at": "2026-01-05T11:00Z",
+            "to_level": "PRIORITY",
+            "quota_minutes": 60,
+            "used_minutes_at_boundary": 120,
+            "source_record_id": "L-DOWN",
+            "submit_no": 4,
+            "version": 1,
+            "business_seq": 10,
+            "applied": true
+          },
+          {
+            "at": "2026-01-05T13:00Z",
+            "to_level": "ENTERPRISE",
+            "quota_minutes": 480,
+            "used_minutes_at_boundary": 180,
+            "source_record_id": "L-UP",
+            "submit_no": 4,
+            "version": 1,
+            "business_seq": 10,
+            "applied": true
+          }
+        ],
+        "selected_source_record_ids": [
+          "I-LEVEL",
+          "L-DOWN",
+          "L-UP",
+          "X-LEVEL"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-LEVEL",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-LEVEL-DOWN-UP",
+            "submit_no": 1,
+            "op_index": 2,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-LEVEL",
+              "case_id": "C-LEVEL-DOWN-UP",
+              "at": "2026-01-05T09:00Z",
+              "service_point": "EAST",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-LEVEL",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-LEVEL-DOWN-UP",
+            "submit_no": 2,
+            "op_index": 2,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-LEVEL",
+              "case_id": "C-LEVEL-DOWN-UP",
+              "at": "2026-01-05T17:00Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "L-DOWN",
+            "version": 1,
+            "op": "put",
+            "kind": "level_change",
+            "case_id": "C-LEVEL-DOWN-UP",
+            "submit_no": 4,
+            "op_index": 0,
+            "business_seq": 10,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "level_change",
+              "record_id": "L-DOWN",
+              "case_id": "C-LEVEL-DOWN-UP",
+              "at": "2026-01-05T11:00Z",
+              "to_level": "PRIORITY",
+              "business_seq": 10
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "L-UP",
+            "version": 1,
+            "op": "put",
+            "kind": "level_change",
+            "case_id": "C-LEVEL-DOWN-UP",
+            "submit_no": 4,
+            "op_index": 1,
+            "business_seq": 10,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "level_change",
+              "record_id": "L-UP",
+              "case_id": "C-LEVEL-DOWN-UP",
+              "at": "2026-01-05T13:00Z",
+              "to_level": "ENTERPRISE",
+              "business_seq": 10
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-NO-CALENDAR",
+        "issuable": false,
+        "included": true,
+        "closed": true,
+        "timeliness": "indeterminate",
+        "used_minutes": null,
+        "known_used_minutes": 0,
+        "breached": null,
+        "earliest_breach": null,
+        "known_breach": null,
+        "intake_at": "2026-01-05T09:00Z",
+        "completion_at": "2026-01-05T17:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-05T17:00Z",
+        "service_point": "NORTH",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": null,
+        "level_at_intake": "STD",
+        "current_level": "STD",
+        "quota_minutes": 120,
+        "blocking_reasons": [
+          "calendar_not_found_for_service_point:NORTH"
+        ],
+        "coverage_gaps": [
+          {
+            "start": "2026-01-05T09:00Z",
+            "end": "2026-01-05T17:00Z",
+            "minutes": 480
+          }
+        ],
+        "effective_wait_intervals": [],
+        "billable_intervals": [],
+        "level_timeline": [],
+        "selected_source_record_ids": [
+          "I-NOCAL",
+          "X-NOCAL"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-NOCAL",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-NO-CALENDAR",
+            "submit_no": 1,
+            "op_index": 7,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-NOCAL",
+              "case_id": "C-NO-CALENDAR",
+              "at": "2026-01-05T09:00Z",
+              "service_point": "NORTH",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-NOCAL",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-NO-CALENDAR",
+            "submit_no": 2,
+            "op_index": 7,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-NOCAL",
+              "case_id": "C-NO-CALENDAR",
+              "at": "2026-01-05T17:00Z"
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-RECOVERY",
+        "issuable": true,
+        "included": true,
+        "closed": true,
+        "timeliness": "timeout",
+        "used_minutes": 121,
+        "known_used_minutes": 121,
+        "breached": true,
+        "earliest_breach": {
+          "at": "2026-01-05T12:00Z",
+          "kind": "counted_minute_right_boundary",
+          "counted_minute_start": "2026-01-05T11:59Z",
+          "counted_minute_end": "2026-01-05T12:00Z",
+          "level_during_minute": "STD",
+          "quota_minutes": 120,
+          "used_minutes_after_increment": 121,
+          "calendar_id": "EAST-UTC",
+          "calendar_version": 1,
+          "open_interval_id": "OPEN-JAN5-AM",
+          "intake_record_id": "I-RECOVERY"
+        },
+        "known_breach": null,
+        "intake_at": "2026-01-05T09:00Z",
+        "completion_at": "2026-01-05T12:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-05T12:00Z",
+        "service_point": "EAST",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": {
+          "source_type": "calendar",
+          "service_point": "EAST",
+          "calendar_id": "EAST-UTC",
+          "version": 1,
+          "visible_from_submit_no": 1,
+          "coverage_intervals": [
+            {
+              "start": "2025-12-31T23:00Z",
+              "end": "2026-01-01T01:00Z",
+              "minutes": 120
+            },
+            {
+              "start": "2026-01-05T00:00Z",
+              "end": "2026-01-06T00:00Z",
+              "minutes": 1440
+            }
+          ]
+        },
+        "level_at_intake": "STD",
+        "current_level": "STD",
+        "quota_minutes": 120,
+        "blocking_reasons": [],
+        "coverage_gaps": [],
+        "effective_wait_intervals": [
+          {
+            "start": "2026-01-05T10:00Z",
+            "end": "2026-01-05T10:30Z",
+            "minutes": 30
+          },
+          {
+            "start": "2026-01-05T10:31Z",
+            "end": "2026-01-05T11:00Z",
+            "minutes": 29
+          }
+        ],
+        "billable_intervals": [
+          {
+            "start": "2026-01-05T09:00Z",
+            "end": "2026-01-05T10:00Z",
+            "minutes": 60
+          },
+          {
+            "start": "2026-01-05T10:30Z",
+            "end": "2026-01-05T10:31Z",
+            "minutes": 1
+          },
+          {
+            "start": "2026-01-05T11:00Z",
+            "end": "2026-01-05T12:00Z",
+            "minutes": 60
+          }
+        ],
+        "level_timeline": [],
+        "selected_source_record_ids": [
+          "I-RECOVERY",
+          "W-REC-A",
+          "W-REC-B",
+          "W-REC-C",
+          "X-RECOVERY"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-RECOVERY",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-RECOVERY",
+            "submit_no": 1,
+            "op_index": 1,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-RECOVERY",
+              "case_id": "C-RECOVERY",
+              "at": "2026-01-05T09:00Z",
+              "service_point": "EAST",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-RECOVERY",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-RECOVERY",
+            "submit_no": 2,
+            "op_index": 1,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-RECOVERY",
+              "case_id": "C-RECOVERY",
+              "at": "2026-01-05T12:00Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "W-REC-A",
+            "version": 1,
+            "op": "put",
+            "kind": "waiting",
+            "case_id": "C-RECOVERY",
+            "submit_no": 3,
+            "op_index": 2,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "waiting",
+              "record_id": "W-REC-A",
+              "case_id": "C-RECOVERY",
+              "start": "2026-01-05T10:00Z",
+              "end": "2026-01-05T10:30Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "W-REC-B",
+            "version": 1,
+            "op": "put",
+            "kind": "waiting",
+            "case_id": "C-RECOVERY",
+            "submit_no": 3,
+            "op_index": 3,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "waiting",
+              "record_id": "W-REC-B",
+              "case_id": "C-RECOVERY",
+              "start": "2026-01-05T10:20Z",
+              "end": "2026-01-05T10:30Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "W-REC-C",
+            "version": 1,
+            "op": "put",
+            "kind": "waiting",
+            "case_id": "C-RECOVERY",
+            "submit_no": 3,
+            "op_index": 4,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "waiting",
+              "record_id": "W-REC-C",
+              "case_id": "C-RECOVERY",
+              "start": "2026-01-05T10:31Z",
+              "end": "2026-01-05T11:00Z"
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-REPLACED-INTAKE",
+        "issuable": true,
+        "included": true,
+        "closed": true,
+        "timeliness": "on_time",
+        "used_minutes": 120,
+        "known_used_minutes": 120,
+        "breached": false,
+        "earliest_breach": null,
+        "known_breach": null,
+        "intake_at": "2026-01-05T10:00Z",
+        "completion_at": "2026-01-05T12:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-05T12:00Z",
+        "service_point": "EAST",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": {
+          "source_type": "calendar",
+          "service_point": "EAST",
+          "calendar_id": "EAST-UTC",
+          "version": 1,
+          "visible_from_submit_no": 1,
+          "coverage_intervals": [
+            {
+              "start": "2025-12-31T23:00Z",
+              "end": "2026-01-01T01:00Z",
+              "minutes": 120
+            },
+            {
+              "start": "2026-01-05T00:00Z",
+              "end": "2026-01-06T00:00Z",
+              "minutes": 1440
+            }
+          ]
+        },
+        "level_at_intake": "STD",
+        "current_level": "STD",
+        "quota_minutes": 120,
+        "blocking_reasons": [],
+        "coverage_gaps": [],
+        "effective_wait_intervals": [],
+        "billable_intervals": [
+          {
+            "start": "2026-01-05T10:00Z",
+            "end": "2026-01-05T12:00Z",
+            "minutes": 120
+          }
+        ],
+        "level_timeline": [],
+        "selected_source_record_ids": [
+          "I-REPLACE",
+          "X-REPLACE"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-REPLACE",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-REPLACED-INTAKE",
+            "submit_no": 1,
+            "op_index": 5,
+            "business_seq": null,
+            "selected_as_highest_visible_version": false,
+            "effective_state_as_of_cutoff": "superseded_or_lower_version",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-REPLACE",
+              "case_id": "C-REPLACED-INTAKE",
+              "at": "2026-01-05T09:00Z",
+              "service_point": "EAST",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-REPLACE",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-REPLACED-INTAKE",
+            "submit_no": 2,
+            "op_index": 5,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-REPLACE",
+              "case_id": "C-REPLACED-INTAKE",
+              "at": "2026-01-05T12:00Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "I-REPLACE",
+            "version": 2,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-REPLACED-INTAKE",
+            "submit_no": 8,
+            "op_index": 0,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 2,
+              "kind": "intake",
+              "record_id": "I-REPLACE",
+              "case_id": "C-REPLACED-INTAKE",
+              "at": "2026-01-05T10:00Z",
+              "service_point": "EAST",
+              "level": "STD",
+              "reason": "scanner batch had wrong cover timestamp"
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-REVOKED-WAIT",
+        "issuable": true,
+        "included": true,
+        "closed": true,
+        "timeliness": "timeout",
+        "used_minutes": 180,
+        "known_used_minutes": 180,
+        "breached": true,
+        "earliest_breach": {
+          "at": "2026-01-05T11:01Z",
+          "kind": "counted_minute_right_boundary",
+          "counted_minute_start": "2026-01-05T11:00Z",
+          "counted_minute_end": "2026-01-05T11:01Z",
+          "level_during_minute": "STD",
+          "quota_minutes": 120,
+          "used_minutes_after_increment": 121,
+          "calendar_id": "EAST-UTC",
+          "calendar_version": 1,
+          "open_interval_id": "OPEN-JAN5-AM",
+          "intake_record_id": "I-REVOKE"
+        },
+        "known_breach": null,
+        "intake_at": "2026-01-05T09:00Z",
+        "completion_at": "2026-01-05T12:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-05T12:00Z",
+        "service_point": "EAST",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": {
+          "source_type": "calendar",
+          "service_point": "EAST",
+          "calendar_id": "EAST-UTC",
+          "version": 1,
+          "visible_from_submit_no": 1,
+          "coverage_intervals": [
+            {
+              "start": "2025-12-31T23:00Z",
+              "end": "2026-01-01T01:00Z",
+              "minutes": 120
+            },
+            {
+              "start": "2026-01-05T00:00Z",
+              "end": "2026-01-06T00:00Z",
+              "minutes": 1440
+            }
+          ]
+        },
+        "level_at_intake": "STD",
+        "current_level": "STD",
+        "quota_minutes": 120,
+        "blocking_reasons": [],
+        "coverage_gaps": [],
+        "effective_wait_intervals": [],
+        "billable_intervals": [
+          {
+            "start": "2026-01-05T09:00Z",
+            "end": "2026-01-05T12:00Z",
+            "minutes": 180
+          }
+        ],
+        "level_timeline": [],
+        "selected_source_record_ids": [
+          "I-REVOKE",
+          "W-REVOKE",
+          "X-REVOKE"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-REVOKE",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-REVOKED-WAIT",
+            "submit_no": 1,
+            "op_index": 4,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-REVOKE",
+              "case_id": "C-REVOKED-WAIT",
+              "at": "2026-01-05T09:00Z",
+              "service_point": "EAST",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-REVOKE",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-REVOKED-WAIT",
+            "submit_no": 2,
+            "op_index": 4,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-REVOKE",
+              "case_id": "C-REVOKED-WAIT",
+              "at": "2026-01-05T12:00Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "W-REVOKE",
+            "version": 1,
+            "op": "put",
+            "kind": "waiting",
+            "case_id": "C-REVOKED-WAIT",
+            "submit_no": 3,
+            "op_index": 1,
+            "business_seq": null,
+            "selected_as_highest_visible_version": false,
+            "effective_state_as_of_cutoff": "superseded_or_lower_version",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "waiting",
+              "record_id": "W-REVOKE",
+              "case_id": "C-REVOKED-WAIT",
+              "start": "2026-01-05T10:00Z",
+              "end": "2026-01-05T11:00Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "W-REVOKE",
+            "version": 2,
+            "op": "revoke",
+            "kind": "waiting",
+            "case_id": "C-REVOKED-WAIT",
+            "submit_no": 7,
+            "op_index": 0,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "revoked",
+            "record": {
+              "op": "revoke",
+              "version": 2,
+              "kind": "waiting",
+              "record_id": "W-REVOKE",
+              "case_id": "C-REVOKED-WAIT",
+              "reason": "erroneous wait interval; customer did not request materials"
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-WAIT-EXACT",
+        "issuable": true,
+        "included": true,
+        "closed": true,
+        "timeliness": "on_time",
+        "used_minutes": 120,
+        "known_used_minutes": 120,
+        "breached": false,
+        "earliest_breach": null,
+        "known_breach": null,
+        "intake_at": "2026-01-05T09:00Z",
+        "completion_at": "2026-01-05T12:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-05T12:00Z",
+        "service_point": "EAST",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": {
+          "source_type": "calendar",
+          "service_point": "EAST",
+          "calendar_id": "EAST-UTC",
+          "version": 1,
+          "visible_from_submit_no": 1,
+          "coverage_intervals": [
+            {
+              "start": "2025-12-31T23:00Z",
+              "end": "2026-01-01T01:00Z",
+              "minutes": 120
+            },
+            {
+              "start": "2026-01-05T00:00Z",
+              "end": "2026-01-06T00:00Z",
+              "minutes": 1440
+            }
+          ]
+        },
+        "level_at_intake": "STD",
+        "current_level": "STD",
+        "quota_minutes": 120,
+        "blocking_reasons": [],
+        "coverage_gaps": [],
+        "effective_wait_intervals": [
+          {
+            "start": "2026-01-05T10:00Z",
+            "end": "2026-01-05T11:00Z",
+            "minutes": 60
+          }
+        ],
+        "billable_intervals": [
+          {
+            "start": "2026-01-05T09:00Z",
+            "end": "2026-01-05T10:00Z",
+            "minutes": 60
+          },
+          {
+            "start": "2026-01-05T11:00Z",
+            "end": "2026-01-05T12:00Z",
+            "minutes": 60
+          }
+        ],
+        "level_timeline": [],
+        "selected_source_record_ids": [
+          "I-WAIT-EXACT",
+          "W-EXACT",
+          "X-WAIT-EXACT"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-WAIT-EXACT",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-WAIT-EXACT",
+            "submit_no": 1,
+            "op_index": 0,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-WAIT-EXACT",
+              "case_id": "C-WAIT-EXACT",
+              "at": "2026-01-05T09:00Z",
+              "service_point": "EAST",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-WAIT-EXACT",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-WAIT-EXACT",
+            "submit_no": 2,
+            "op_index": 0,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-WAIT-EXACT",
+              "case_id": "C-WAIT-EXACT",
+              "at": "2026-01-05T12:00Z"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "W-EXACT",
+            "version": 1,
+            "op": "put",
+            "kind": "waiting",
+            "case_id": "C-WAIT-EXACT",
+            "submit_no": 3,
+            "op_index": 0,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "waiting",
+              "record_id": "W-EXACT",
+              "case_id": "C-WAIT-EXACT",
+              "start": "2026-01-05T10:00Z",
+              "end": "2026-01-05T11:00Z"
+            }
+          }
+        ]
+      },
+      {
+        "case_id": "C-YEAR-BOUNDARY",
+        "issuable": true,
+        "included": true,
+        "closed": true,
+        "timeliness": "on_time",
+        "used_minutes": 120,
+        "known_used_minutes": 120,
+        "breached": false,
+        "earliest_breach": null,
+        "known_breach": null,
+        "intake_at": "2025-12-31T23:00Z",
+        "completion_at": "2026-01-01T01:00Z",
+        "observation_at": "2026-01-06T00:00Z",
+        "domain_end_at": "2026-01-01T01:00Z",
+        "service_point": "EAST",
+        "contract_id": "STANDARD-UTC",
+        "contract_catalog": {
+          "catalog_id": "SLA",
+          "version": 1
+        },
+        "calendar": {
+          "source_type": "calendar",
+          "service_point": "EAST",
+          "calendar_id": "EAST-UTC",
+          "version": 1,
+          "visible_from_submit_no": 1,
+          "coverage_intervals": [
+            {
+              "start": "2025-12-31T23:00Z",
+              "end": "2026-01-01T01:00Z",
+              "minutes": 120
+            },
+            {
+              "start": "2026-01-05T00:00Z",
+              "end": "2026-01-06T00:00Z",
+              "minutes": 1440
+            }
+          ]
+        },
+        "level_at_intake": "STD",
+        "current_level": "STD",
+        "quota_minutes": 120,
+        "blocking_reasons": [],
+        "coverage_gaps": [],
+        "effective_wait_intervals": [],
+        "billable_intervals": [
+          {
+            "start": "2025-12-31T23:00Z",
+            "end": "2026-01-01T01:00Z",
+            "minutes": 120
+          }
+        ],
+        "level_timeline": [],
+        "selected_source_record_ids": [
+          "I-YEAR",
+          "X-YEAR"
+        ],
+        "sources": [
+          {
+            "source_type": "business_record",
+            "record_id": "I-YEAR",
+            "version": 1,
+            "op": "put",
+            "kind": "intake",
+            "case_id": "C-YEAR-BOUNDARY",
+            "submit_no": 1,
+            "op_index": 8,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "intake",
+              "record_id": "I-YEAR",
+              "case_id": "C-YEAR-BOUNDARY",
+              "at": "2025-12-31T23:00Z",
+              "service_point": "EAST",
+              "level": "STD"
+            }
+          },
+          {
+            "source_type": "business_record",
+            "record_id": "X-YEAR",
+            "version": 1,
+            "op": "put",
+            "kind": "completion",
+            "case_id": "C-YEAR-BOUNDARY",
+            "submit_no": 2,
+            "op_index": 8,
+            "business_seq": null,
+            "selected_as_highest_visible_version": true,
+            "effective_state_as_of_cutoff": "active",
+            "record": {
+              "op": "put",
+              "version": 1,
+              "kind": "completion",
+              "record_id": "X-YEAR",
+              "case_id": "C-YEAR-BOUNDARY",
+              "at": "2026-01-01T01:00Z"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

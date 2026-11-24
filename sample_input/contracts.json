@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "catalogs": [
+    {
+      "catalog_id": "SLA",
+      "version": 1,
+      "visible_from_submit_no": 1,
+      "contracts": [
+        {
+          "contract_id": "STANDARD-UTC",
+          "effective_from": "2025-01-01T00:00Z",
+          "effective_to": null,
+          "service_points": [
+            "EAST",
+            "WEST",
+            "NORTH"
+          ],
+          "levels": {
+            "STD": 120,
+            "PRIORITY": 60,
+            "EXTENDED": 240,
+            "ENTERPRISE": 480
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+case_id,issuable,included,closed,timeliness,used_minutes,known_used_minutes,breached,service_point,contract_id,contract_catalog_version,calendar_id,calendar_version,current_level,quota_minutes,earliest_breach_at,breach_kind,blocking_reasons,coverage_gaps,source_record_ids
+C-CALENDAR-FIX,True,True,True,on_time,240,240,False,WEST,STANDARD-UTC,1,WEST-UTC,2,EXTENDED,240,,,,,I-CAL@v1/sub1*;X-CAL@v1/sub2*
+C-COMPLETION-LEVEL,True,True,True,on_time,120,120,False,EAST,STANDARD-UTC,1,EAST-UTC,1,STD,120,,,,,I-COMP-LEVEL@v1/sub1*;X-COMP-LEVEL@v1/sub2*;L-COMP@v1/sub4*
+C-LEVEL-DOWN-UP,True,True,True,timeout,420,420,True,EAST,STANDARD-UTC,1,EAST-UTC,1,ENTERPRISE,480,2026-01-05T11:00Z,level_change,,,I-LEVEL@v1/sub1*;X-LEVEL@v1/sub2*;L-DOWN@v1/sub4*;L-UP@v1/sub4*
+C-NO-CALENDAR,False,True,True,indeterminate,,0,,NORTH,STANDARD-UTC,1,,,STD,120,,,calendar_not_found_for_service_point:NORTH,2026-01-05T09:00Z/480m,I-NOCAL@v1/sub1*;X-NOCAL@v1/sub2*
+C-RECOVERY,True,True,True,timeout,121,121,True,EAST,STANDARD-UTC,1,EAST-UTC,1,STD,120,2026-01-05T12:00Z,counted_minute_right_boundary,,,I-RECOVERY@v1/sub1*;X-RECOVERY@v1/sub2*;W-REC-A@v1/sub3*;W-REC-B@v1/sub3*;W-REC-C@v1/sub3*
+C-REPLACED-INTAKE,True,True,True,on_time,120,120,False,EAST,STANDARD-UTC,1,EAST-UTC,1,STD,120,,,,,I-REPLACE@v1/sub1;X-REPLACE@v1/sub2*;I-REPLACE@v2/sub8*
+C-REVOKED-WAIT,True,True,True,timeout,180,180,True,EAST,STANDARD-UTC,1,EAST-UTC,1,STD,120,2026-01-05T11:01Z,counted_minute_right_boundary,,,I-REVOKE@v1/sub1*;X-REVOKE@v1/sub2*;W-REVOKE@v1/sub3;W-REVOKE@v2/sub7*
+C-WAIT-EXACT,True,True,True,on_time,120,120,False,EAST,STANDARD-UTC,1,EAST-UTC,1,STD,120,,,,,I-WAIT-EXACT@v1/sub1*;X-WAIT-EXACT@v1/sub2*;W-EXACT@v1/sub3*
+C-YEAR-BOUNDARY,True,True,True,on_time,120,120,False,EAST,STANDARD-UTC,1,EAST-UTC,1,STD,120,,,,,I-YEAR@v1/sub1*;X-YEAR@v1/sub2*

@@ -1,0 +1,50 @@
+{
+  "submit_no": 3,
+  "records": [
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "waiting",
+      "record_id": "W-EXACT",
+      "case_id": "C-WAIT-EXACT",
+      "start": "2026-01-05T10:00Z",
+      "end": "2026-01-05T11:00Z"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "waiting",
+      "record_id": "W-REVOKE",
+      "case_id": "C-REVOKED-WAIT",
+      "start": "2026-01-05T10:00Z",
+      "end": "2026-01-05T11:00Z"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "waiting",
+      "record_id": "W-REC-A",
+      "case_id": "C-RECOVERY",
+      "start": "2026-01-05T10:00Z",
+      "end": "2026-01-05T10:30Z"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "waiting",
+      "record_id": "W-REC-B",
+      "case_id": "C-RECOVERY",
+      "start": "2026-01-05T10:20Z",
+      "end": "2026-01-05T10:30Z"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "waiting",
+      "record_id": "W-REC-C",
+      "case_id": "C-RECOVERY",
+      "start": "2026-01-05T10:31Z",
+      "end": "2026-01-05T11:00Z"
+    }
+  ]
+}

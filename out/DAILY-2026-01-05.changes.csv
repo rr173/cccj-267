@@ -1,0 +1,4 @@
+case_id,transition,changed_fields,before_closed,after_closed,before_issuable,after_issuable,before_timeliness,after_timeliness,before_used_minutes,after_used_minutes,before_earliest_breach_at,after_earliest_breach_at,before_calendar_version,after_calendar_version,added_sources,removed_sources
+C-CALENDAR-FIX,timeout->on_time,breached;calendar_version;earliest_breach_at;known_used_minutes;timeliness;used_minutes,True,True,True,True,timeout,on_time,300,240,2026-01-05T13:01Z,,1,2,,
+C-REPLACED-INTAKE,timeout->on_time,breached;earliest_breach_at;known_used_minutes;timeliness;used_minutes,True,True,True,True,timeout,on_time,180,120,2026-01-05T11:01Z,,1,1,I-REPLACE@v2/sub8,
+C-REVOKED-WAIT,on_time->timeout,breached;earliest_breach_at;known_used_minutes;timeliness;used_minutes,True,True,True,True,on_time,timeout,120,180,,2026-01-05T11:01Z,1,1,W-REVOKE@v2/sub7,

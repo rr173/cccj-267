@@ -1,0 +1,16 @@
+{
+  "submit_no": 8,
+  "records": [
+    {
+      "op": "put",
+      "version": 2,
+      "kind": "intake",
+      "record_id": "I-REPLACE",
+      "case_id": "C-REPLACED-INTAKE",
+      "at": "2026-01-05T10:00Z",
+      "service_point": "EAST",
+      "level": "STD",
+      "reason": "scanner batch had wrong cover timestamp"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "submit_no": 2,
+  "records": [
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "completion",
+      "record_id": "X-WAIT-EXACT",
+      "case_id": "C-WAIT-EXACT",
+      "at": "2026-01-05T12:00Z"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "completion",
+      "record_id": "X-RECOVERY",
+      "case_id": "C-RECOVERY",
+      "at": "2026-01-05T12:00Z"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "completion",
+      "record_id": "X-LEVEL",
+      "case_id": "C-LEVEL-DOWN-UP",
+      "at": "2026-01-05T17:00Z"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "completion",
+      "record_id": "X-COMP-LEVEL",
+      "case_id": "C-COMPLETION-LEVEL",
+      "at": "2026-01-05T15:00Z"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "completion",
+      "record_id": "X-REVOKE",
+      "case_id": "C-REVOKED-WAIT",
+      "at": "2026-01-05T12:00Z"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "completion",
+      "record_id": "X-REPLACE",
+      "case_id": "C-REPLACED-INTAKE",
+      "at": "2026-01-05T12:00Z"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "completion",
+      "record_id": "X-CAL",
+      "case_id": "C-CALENDAR-FIX",
+      "at": "2026-01-05T14:00Z"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "completion",
+      "record_id": "X-NOCAL",
+      "case_id": "C-NO-CALENDAR",
+      "at": "2026-01-05T17:00Z"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "completion",
+      "record_id": "X-YEAR",
+      "case_id": "C-YEAR-BOUNDARY",
+      "at": "2026-01-01T01:00Z"
+    }
+  ]
+}

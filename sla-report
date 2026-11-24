@@ -1,0 +1,4 @@
+#!/bin/sh
+# Offline SLA report entry point. -I avoids importing an untrusted local json.py etc.
+ROOT=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+exec python3 -I "$ROOT/app/sla_report.py" "$@"

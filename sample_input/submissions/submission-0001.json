@@ -1,0 +1,95 @@
+{
+  "submit_no": 1,
+  "records": [
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "intake",
+      "record_id": "I-WAIT-EXACT",
+      "case_id": "C-WAIT-EXACT",
+      "at": "2026-01-05T09:00Z",
+      "service_point": "EAST",
+      "level": "STD"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "intake",
+      "record_id": "I-RECOVERY",
+      "case_id": "C-RECOVERY",
+      "at": "2026-01-05T09:00Z",
+      "service_point": "EAST",
+      "level": "STD"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "intake",
+      "record_id": "I-LEVEL",
+      "case_id": "C-LEVEL-DOWN-UP",
+      "at": "2026-01-05T09:00Z",
+      "service_point": "EAST",
+      "level": "STD"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "intake",
+      "record_id": "I-COMP-LEVEL",
+      "case_id": "C-COMPLETION-LEVEL",
+      "at": "2026-01-05T13:00Z",
+      "service_point": "EAST",
+      "level": "STD"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "intake",
+      "record_id": "I-REVOKE",
+      "case_id": "C-REVOKED-WAIT",
+      "at": "2026-01-05T09:00Z",
+      "service_point": "EAST",
+      "level": "STD"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "intake",
+      "record_id": "I-REPLACE",
+      "case_id": "C-REPLACED-INTAKE",
+      "at": "2026-01-05T09:00Z",
+      "service_point": "EAST",
+      "level": "STD"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "intake",
+      "record_id": "I-CAL",
+      "case_id": "C-CALENDAR-FIX",
+      "at": "2026-01-05T09:00Z",
+      "service_point": "WEST",
+      "level": "EXTENDED"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "intake",
+      "record_id": "I-NOCAL",
+      "case_id": "C-NO-CALENDAR",
+      "at": "2026-01-05T09:00Z",
+      "service_point": "NORTH",
+      "level": "STD"
+    },
+    {
+      "op": "put",
+      "version": 1,
+      "kind": "intake",
+      "record_id": "I-YEAR",
+      "case_id": "C-YEAR-BOUNDARY",
+      "at": "2025-12-31T23:00Z",
+      "service_point": "EAST",
+      "level": "STD"
+    }
+  ]
+}
